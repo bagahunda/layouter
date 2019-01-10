@@ -1,31 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Layouter :layouts="$options.LAYOUTS" :current="$route.meta.layout"></Layouter>
   </div>
 </template>
 
+<script>
+import Layouter from "@/components/Layouter";
+import HomeLayout from "@/Layouts/HomeLayout";
+import AboutLayout from "@/Layouts/AboutLayout";
+
+const LAYOUTS = {
+  HomeLayout,
+  AboutLayout
+};
+
+export default {
+  components: {
+    Layouter
+  },
+  LAYOUTS
+};
+</script>
+
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
