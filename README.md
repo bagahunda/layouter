@@ -2,7 +2,7 @@
 
 ## Project setup
 
-```
+```bash
 npm install layouter
 ```
 
@@ -10,7 +10,7 @@ npm install layouter
 
 First you need to describe layout in router.js
 
-```
+```js
 //...
 
 routes: [
@@ -41,7 +41,7 @@ routes: [
 
 After that import layouter in your App.vue
 
-```
+```js
 <template>
   <div id="app">
     <Layouter :layouts="$options.LAYOUTS" :current="$route.meta.layout"></Layouter>
@@ -76,4 +76,4 @@ And there you go. You can rule layouts as a king 🤴.
 | layouts            | false    | Object          | {}               | List of available layouts                                          |
 | current            | false    | String          | null             | Layout to show                                                     |
 | layoutClasses      | false    | [Object, Array] | ['layout']       | Classes you want to ass to your layout parent element              |
-| pageWrapperClasses | false    | [Object, Array] | ['page-wrapper'] | Classes you want to add to <router-view> that contains your layout |
+| pageWrapperClasses | false    | [Object, Array] | ['page-wrapper'] | Classes you want to add to `<router-view>` that contains your layout |
