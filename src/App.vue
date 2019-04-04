@@ -8,10 +8,12 @@
 import Layouter from "@/components/Layouter";
 import HomeLayout from "@/Layouts/HomeLayout";
 import AboutLayout from "@/Layouts/AboutLayout";
+import NewsLayout from "@/Layouts/NewsLayout";
 
 const LAYOUTS = {
   HomeLayout,
-  AboutLayout
+  AboutLayout,
+  NewsLayout
 };
 
 export default {

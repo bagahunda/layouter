@@ -1,7 +1,6 @@
 {
-  "name": "layouter",
+  "name": "vue-layouter",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +8,12 @@
     "build-bundle": "vue-cli-service build --target lib --name layouter ./src/components/index.js"
   },
   "dependencies": {
+    "browser-detect": "^0.2.28",
+    "glsl-noise": "0.0.0",
+    "gsap": "^2.0.2",
+    "stats.js": "^0.17.0",
+    "three": "^0.100.0",
+    "three-orbitcontrols": "^2.99.1",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1"
   },
@@ -19,6 +24,29 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "glslify": "^7.0.0",
+    "glslify-import-loader": "^0.1.2",
+    "glslify-loader": "^2.0.0",
+    "raw-loader": "^1.0.0",
     "vue-template-compiler": "^2.5.21"
+  },
+  "main": "./dist/layouter.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "author": "Dmitry Pohodnya",
+  "license": "ISC",
+  "keywords": [
+    "vue",
+    "components",
+    "layouts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bagahunda/layouter"
   }
 }

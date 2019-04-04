@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <h1>about page</h1>
-  </div>
+  <div>about page</div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+
+  mounted() {},
+
+  methods: {}
+};
 </script>
 
 <style scoped>
